@@ -14,6 +14,8 @@
 		5B4D67391EFD82EE00A4BE3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D67381EFD82EE00A4BE3C /* Assets.xcassets */; };
 		5B4D673C1EFD82EE00A4BE3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B4D673A1EFD82EE00A4BE3C /* LaunchScreen.storyboard */; };
 		5B4D67461EFD878100A4BE3C /* TodoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4D67451EFD878100A4BE3C /* TodoListCell.swift */; };
+		5B6042941EFDACFA0004CC8E /* TodoListDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6042931EFDACFA0004CC8E /* TodoListDetail.swift */; };
+		5B6042961EFDC4F20004CC8E /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6042951EFDC4F20004CC8E /* CoreDataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		5B4D673B1EFD82EE00A4BE3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B4D673D1EFD82EE00A4BE3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B4D67451EFD878100A4BE3C /* TodoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListCell.swift; sourceTree = "<group>"; };
+		5B6042931EFDACFA0004CC8E /* TodoListDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListDetail.swift; sourceTree = "<group>"; };
+		5B6042951EFDC4F20004CC8E /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				5B4D673D1EFD82EE00A4BE3C /* Info.plist */,
 				5B4D67351EFD82EE00A4BE3C /* Todo.xcdatamodeld */,
 				5B4D67451EFD878100A4BE3C /* TodoListCell.swift */,
+				5B6042931EFDACFA0004CC8E /* TodoListDetail.swift */,
+				5B6042951EFDC4F20004CC8E /* CoreDataHelper.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -142,8 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6042961EFDC4F20004CC8E /* CoreDataHelper.swift in Sources */,
 				5B4D67311EFD82EE00A4BE3C /* ViewController.swift in Sources */,
 				5B4D67371EFD82EE00A4BE3C /* Todo.xcdatamodeld in Sources */,
+				5B6042941EFDACFA0004CC8E /* TodoListDetail.swift in Sources */,
 				5B4D672F1EFD82EE00A4BE3C /* AppDelegate.swift in Sources */,
 				5B4D67461EFD878100A4BE3C /* TodoListCell.swift in Sources */,
 			);
@@ -309,6 +317,7 @@
 				5B4D67421EFD82EE00A4BE3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
