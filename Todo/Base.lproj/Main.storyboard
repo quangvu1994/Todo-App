@@ -33,8 +33,7 @@
                                             </constraints>
                                             <state key="normal" title="Done"/>
                                             <connections>
-                                                <action selector="checkbox:" destination="gg9-Et-nR4" eventType="touchUpInside" id="vHe-CO-l6F"/>
-                                                <action selector="finishTask:" destination="MAx-l4-hQ4" eventType="touchUpInside" id="vED-2T-t5g"/>
+                                                <action selector="completeTask:" destination="gg9-Et-nR4" eventType="touchUpInside" id="wBM-g3-Dgb"/>
                                             </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3Gb-Dk-CEt">

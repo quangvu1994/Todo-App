@@ -17,6 +17,7 @@ class TodoListDetail: UIViewController{
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
+            // Create a new task and save it to the Core Data
             if identifier == "Save" {
                 let newTask = task ?? CoreDataHelper.newTask()
                 newTask.title = titleField.text

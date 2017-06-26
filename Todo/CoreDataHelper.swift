@@ -21,6 +21,7 @@ class CoreDataHelper {
     static func newTask() -> Task {
         // Create a new Task entity
         let task = NSEntityDescription.insertNewObject(forEntityName: "Task", into: managedContext) as! Task
+        task.taskComplete = false
         return task
     }
     
@@ -33,21 +34,31 @@ class CoreDataHelper {
         }
     }
     
-    static func retrieveTask() -> [Task] {
+    static func retrieveTask() -> ([Task], [Task]) {
         // Create a request
         let fetchRequest = NSFetchRequest<Task>(entityName: "Task")
         do {
             // Fetch the data with created request
-            let result = try managedContext.fetch(fetchRequest)
-            return result
+            let allTasks = try managedContext.fetch(fetchRequest)
+            var completedTask = [Task]()
+            var unfinishedTask = [Task]()
+            for task in allTasks {
+                if task.taskComplete {
+                    completedTask.append(task)
+                }else {
+                    unfinishedTask.append(task)
+                }
+            }
+            return (unfinishedTask, completedTask)
+            
         }catch let error as NSError {
             print("Could not retrieve \(error)")
         }
         
-        return []
+        return ([], [])
     }
     
-    static func deleteTask(task: Task) {
+    static func delete(task: Task) {
         managedContext.delete(task)
         saveTask()
     }
